@@ -3,7 +3,7 @@ from Automation_Framework.src.dao.products_dao import ProductsDAO
 from Automation_Framework.src.helpers.products_helper import ProductsHelper
 import pytest
 
-
+pytestmark = [pytest.mark.smoke]
 @pytest.mark.products
 @pytest.mark.tcid24
 def test_get_all_products():

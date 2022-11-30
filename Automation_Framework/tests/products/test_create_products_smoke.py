@@ -2,6 +2,7 @@ from Automation_Framework.src.helpers.products_helper import ProductsHelper
 from Automation_Framework.src.Utilities.genericUtilities import generate_random_string
 from Automation_Framework.src.dao.products_dao import ProductsDAO
 import pytest
+pytestmark = [pytest.mark.smoke]
 
 @pytest.mark.products
 @pytest.mark.tcid26
